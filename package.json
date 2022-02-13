@@ -1,7 +1,7 @@
 {
   "name": "borangkdn",
   "version": "0.0.1",
-  "description": "BoranGkdn tarafından yapılan teknisyen bot.",
+  "description": "BoranGkdn tarafından yapılan süpervizör bot.",
   "main": "borangkdn.js",
   "scripts": {
     "start": "node borangkdn.js"
