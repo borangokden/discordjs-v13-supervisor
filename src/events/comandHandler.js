@@ -30,7 +30,7 @@ if (message.author.id === uye) {
     db.delete(`afktime_${message.guild.id}`)
     message.reply({ embeds: [afkembed.setDescription(`Başarıyla **AFK** modundan çıkış yaptınız!`)] }).then((e) => setTimeout(() => { e.delete(); }, 10000));
 }
-    const ownerr = client.users.cache.get("796263552771817472");
+    const ownerr = client.users.cache.get(config.bot.owner);
     if (config.bot.prefix && !message.content.startsWith(config.bot.prefix)) return;
     const args = message.content.slice(1).trim().split(/ +/g);
     const command = args.shift().toLowerCase();
