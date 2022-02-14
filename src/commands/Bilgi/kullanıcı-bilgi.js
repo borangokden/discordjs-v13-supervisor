@@ -14,8 +14,6 @@ module.exports = {
 • Kullanıcı: (<@${member.id}> - \`${member.id}\`) (${message.member.roles.highest})
 • Hesap Kurulum Tarihi: \`${moment(message.member.createdAt).format('D MMMM YYYY')}\`
 • Sunucuya Katılma Tarihi: \`${moment(message.member.joinedAt).format('D MMMM YYYY')}\`
-• Kullanıcının Durumu: \`.\`
-• Giriş Yaptığı Cihaz: \`.\`
 `)] });
 
     }
