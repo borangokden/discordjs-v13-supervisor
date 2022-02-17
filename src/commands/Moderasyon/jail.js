@@ -20,7 +20,7 @@ module.exports = {
         db.set(`isim.${member.id}`, member.displayName)
         member.setNickname(`[JAİLED] ${member.displayName}`)
         member.roles.set([config.penals.jail.roles])
-        message.reply({ embeds: [embed.setDescription(`${member} kullanıcısı ${author} tarafından "reklam" sebebiyle karantinaya atıldı. \`(Ceza ID: #${db.fetch(`ceza_${guild.id}`)})\``)] }).catch((err) => console.log(err), client.ytick(message))
+        message.reply({ embeds: [embed.setDescription(`${member} kullanıcısı ${author} tarafından ${reason} sebebiyle karantinaya atıldı. \`(Ceza ID: #${db.fetch(`ceza_${guild.id}`)})\``)] }).catch((err) => console.log(err), client.ytick(message))
         db.add(`ceza_${guild.id}`, 1)
         client.channels.cache.get(config.penals.jail.log).send({ embeds: [embed.setDescription(`     
         ${member ? member.toString(): member.username} kullanıcısı ${author} tarafından karantinaya atıldı.
