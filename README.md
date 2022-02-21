@@ -11,3 +11,7 @@ Boş.
 Boş.
 
 # Neden v13 Süpervizör ?
+
+Boş.
+
+# İletişim!
