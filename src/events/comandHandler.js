@@ -38,8 +38,10 @@ if (message.author.id === uye) {
     const author = message.author
     const channel = message.channel
     const guild = message.guild
-    const embed = new MessageEmbed().setColor(message.member.displayHexColor).setAuthor(message.member.displayName, author.avatarURL({ dynamic: true, size: 2048 })).setTimestamp().setFooter((config.bot.BotFooter), message.guild.iconURL())
-
+    const embed = new MessageEmbed()        
+        .setColor(message.member.displayHexColor)
+        .setAuthor({name: message.member.displayName, iconURL: author.avatarURL({ dynamic: true, size: 2048 })})
+        .setFooter({text: (config.bot.BotFooter) , iconURL: ownerr.avatarURL({ dynamic: true, size: 2048 })})
     if (cmd) {
         if (cmd.owner && config.bot.owner !== author.id) return;
         if (cmd.guildowner && config.bot.owner !== author.id && guild.owner.id !== author.id) return;
