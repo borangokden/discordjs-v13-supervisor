@@ -42,6 +42,7 @@
     "logs": {
         "taglog": "TAG LOG ID",
         "rollog": "ROL LOG ID",
+        "messagelog": "MESAJ LOG ID",
         "seslog": "SES LOG ID"
     },
     "roles": {
@@ -54,7 +55,7 @@
         "chat": "CHAT KANALI ID",
         "voicechannel": "BOT SES KANALI ID",
         "welcomechannel": "HOŞ GELDİN KANALI ID",
-        "rules": "899246452876922890"
+        "rules": "KURALLAR KANALI ID"
     },
     "registration": {
         "unregistered": "KAYITSIZ ROL ID",
