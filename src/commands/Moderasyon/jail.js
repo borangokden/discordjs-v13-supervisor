@@ -15,7 +15,7 @@ module.exports = {
         if (!member) return message.reply({ embeds: [embed.setDescription("Öncelikle reklam yapan kullanıcıyı belirtmelisin.")] }).catch((err) => console.log(err), client.tick(message)).then((e) => setTimeout(() => { e.delete(); }, 10000));
         if (reason.length < 1) return message.reply({ embeds: [embed.setDescription('Öncelikle geçerli bir sebep belirtmelisin.')] }).catch((err) => console.log(err), client.tick(message)).then((e) => setTimeout(() => { e.delete(); }, 10000));
         if (member.roles.cache.get(config.penals.jail.roles)) return message.reply({ embeds: [embed.setDescription(`${member} kullanıcısı zaten cezalandırılmış.`)] }).catch((err) => console.log(err), client.tick(message)).then((e) => setTimeout(() => { e.delete(); }, 10000));
-        if (!message.member.permissions.has(8) && member && member.roles.highest.position >= message.member.roles.highest.position) return message.reply({ embeds: [embed.setDescription("Kendinle aynı yetkide ya da daha yetkili olan birini cezalayamazsın!")] })
+        if (!message.member.permissions.has("ADMINISTRATOR") && member && member.roles.highest.position >= message.member.roles.highest.position) return message.reply({ embeds: [embed.setDescription("Kendinle aynı yetkide ya da daha yetkili olan birini cezalandıramazsın!")] })
         db.set(`roles.${member.id}`, member.roles.cache.map(x => x.id))
         db.set(`isim.${member.id}`, member.displayName)
         member.setNickname(`[JAİLED] ${member.displayName}`)
