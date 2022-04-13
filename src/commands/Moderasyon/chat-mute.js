@@ -25,7 +25,7 @@ module.exports = {
       .replace("d", " Gün")
       .replace("w", "Hafta")
     if (config.penals.mute.limit > 0 && limit.has(author.id) && limit.get(author.id) == config.penals.mute.limit) return channel.send("Saatlik mute sınırına ulaştın!").catch(err => console.log(err), client.tick(message)).then(m => m.delete({timeout: 10000}));
-    if (!message.member.permissions.has(8) && member && member.roles.highest.position >= message.member.roles.highest.position) return message.reply({ embeds: [embed.setDescription("Kendinle aynı yetkide ya da daha yetkili olan birini muteleyemezsin!")] })
+    if (!message.member.permissions.has("ADMINISTRATOR") && member && member.roles.highest.position >= message.member.roles.highest.position) return message.reply({ embeds: [embed.setDescription("Kendinle aynı yetkide ya da daha yetkili olan birini muteleyemezsin!")] })
 
     message.reply({ embeds: [embed.setDescription(`${member} kullanıcısı ${author} tarafından **"${reason}"** sebebiyle **${sure}** boyunca susturuldu. \`(Ceza ID: #${db.fetch(`ceza_${guild.id}`)})\``)] }).catch((err) => console.log(err), client.ytick(message)).then((e) => setTimeout(() => { e.delete(); }, 10000));
     member.roles.add(config.penals.mute.roles)
