@@ -20,8 +20,8 @@ Boş.
 
 ● Discord Sunucum: https://discord.gg/borangkdn
 
-● YouTube: borangkdn
+● YouTube: https://youtube.com/c/BoranGkdn
 
-● Instagram: @borangkdn
+● Instagram: https://instagram.com/borangkdn
 
-● Twitter: @borangkdn
+● Twitter: https://twitter.com/borangkdn
