@@ -1,5 +1,6 @@
 const config = require("../../config.json");
 const db = require("quick.db");
+const client = global.client;
 const moment = require("moment");
 const { MessageEmbed } = require("discord.js")
 
