@@ -16,7 +16,7 @@ Boş.
 
 # İletişim!
 
-● Discord: BoranGkdn#0001
+● Discord: BoranGkdn0001
 
 ● Discord Sunucum: https://discord.gg/borangkdn
 
