@@ -1,4 +1,4 @@
-# v13 Discord Süpervizör Bot Altyapısı Hakkında Bilgiler!
+# Boran Gökden v13 Discord Süpervizör Bot Altyapısı Hakkında Bilgiler!
 
 Discord sunucularınızda kullanmanız için kodlanmış " v13 Süpervizör " ( Kayıt / Register + Genel Moderasyon / Moderation ) bot'u projesidir.
 
@@ -14,14 +14,12 @@ Boş.
 
 Boş.
 
-# İletişim!
+# Destek/İletişim
+Discord: https://discord.gg/borangkdn 
+Discord Nick: Boran Gökden#0001
 
-● Discord: BoranGkdn0001
+YouTube: https://youtube.com/@borangokden
 
-● Discord Sunucum: https://discord.gg/borangkdn
+Instagram: https://www.instagram.com/borangokden/
 
-● YouTube: https://youtube.com/c/BoranGkdn
-
-● Instagram: https://instagram.com/borangkdn
-
-● Twitter: https://twitter.com/borangkdn
+İyi kullanımlar.
